@@ -1,0 +1,11 @@
+name = "ai-bridge"
+main = "worker.js"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Optional: set custom routes
+# routes = [{ pattern = "api.yourdomain.com/*", zone_name = "yourdomain.com" }]
+
+[vars]
+# You can override these via Cloudflare dashboard → Workers → Settings → Variables
+# PROVIDER_API_KEY = "your-key-here"

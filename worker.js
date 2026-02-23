@@ -22,7 +22,7 @@
 // ── Config ────────────────────────────────────────────────────────────────────
 
 const PROVIDER_BASE = "https://api.evolvex.gg/v1";
-const FALLBACK_KEY  = "evolvex-public";
+const FALLBACK_KEY  = env.PROVIDER_API_KEY || "evx-sk-1ddbea7a2d47d0b89c78840f0924e94592bb07f4c9a93734";
 
 const DUMMY_TOKENS = new Set([
   "any-key", "dummy", "placeholder", "none", "sk-xxx", "",
@@ -588,6 +588,7 @@ async function handleHealth() {
 export default {
   async fetch(request, env, ctx) {
     STATS.requests++;
+    const FALLBACK_KEY = env.PROVIDER_API_KEY || "evx-sk-1ddbea7a2d47d0b89c78840f0924e94592bb07f4c9a93734";
 
     const url    = new URL(request.url);
     const path   = url.pathname;

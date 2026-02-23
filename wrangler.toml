@@ -1,4 +1,4 @@
-name = "ai-bridge"
+name = "free-tier-frenix"
 main = "worker.js"
 compatibility_date = "2024-01-01"
 compatibility_flags = ["nodejs_compat"]
@@ -8,4 +8,4 @@ compatibility_flags = ["nodejs_compat"]
 
 [vars]
 # You can override these via Cloudflare dashboard → Workers → Settings → Variables
-# PROVIDER_API_KEY = "your-key-here"
+PROVIDER_API_KEY = "evx-sk-1ddbea7a2d47d0b89c78840f0924e94592bb07f4c9a93734"
